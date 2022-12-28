@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     volumes:
-      - ./app:/app
+      - ./test:/test
     ports:
       - "80:80"
     environment:
