@@ -1,4 +1,4 @@
-from ..models.user import User
+from user import User
 
 users = [
     User("Alice Example", "alice@example.com"),
