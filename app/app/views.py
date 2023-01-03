@@ -14,4 +14,4 @@ def hello():
 
 @views.route("/foo")
 def foo():
-    return "This has been added after the application was already running"
+    return "This has been edited off of the server and then moved onto it"
