@@ -1,9 +1,9 @@
+from flask import Blueprint
 
-from .main import app
-from os import getcwd
+views = Blueprint("views", __name__)
 
 
-@app.route("/")
+@views.route("/")
 def hello():
     # This could also be returning an index.html
 
@@ -12,6 +12,6 @@ def hello():
     return 'Hello World!<br><br>try also: <a href="/foo">foo<a/>'
 
 
-@app.route("/foo")
+@views.route("/foo")
 def foo():
     return "This has been added after the application was already running"

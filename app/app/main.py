@@ -1,8 +1,6 @@
-from flask import Flask
+from . import create_app
 
-app = Flask(__name__)
-
-from . import views
+app = create_app()
 
 def run():
     app.run(host="0.0.0.0", debug=True, port=80)
